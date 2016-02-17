@@ -34,10 +34,11 @@ html, body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
   .text {
     color: $white;
     font-family: 'Roboto Condensed';
+    font-size: 800;
     font-size: 22px;
     letter-spacing: 8px;
     line-height: 32px;
