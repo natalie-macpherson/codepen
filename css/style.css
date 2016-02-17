@@ -86,7 +86,7 @@ a .text {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 4px;
-  stroke: #000;
+  stroke: #88c10e;
   fill: transparent;
 }
 
@@ -99,7 +99,7 @@ a .text {
   100% {
     stroke-dasharray: 760;
     stroke-dashoffset: 0;
-    stroke-width: 2px;
+    stroke-width: 4px;
   }
 }
 
