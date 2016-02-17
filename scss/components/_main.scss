@@ -37,7 +37,7 @@ html, body {
   fill: transparent;
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
-  stroke-width: 8px;
+  stroke-width: 4px;
   stroke: #19f6e8;
 }
 
@@ -51,22 +51,26 @@ html, body {
 }
 
 
-.text {
-  color: #fff;
-  font-family: 'Roboto Condensed';
-  font-size: 22px;
-  letter-spacing: 8px;
-  line-height: 32px;
-  position: relative;
-  top: -237px;
-  text-transform: uppercase;
+a {
+    text-decoration: none;
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -111px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }
 
 @keyframes draw {
   0% {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
-    stroke-width: 8px;
+    stroke-width: 4px;
   }
   100% {
     stroke-dasharray: 760;
