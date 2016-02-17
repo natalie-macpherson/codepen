@@ -42,30 +42,13 @@ html, body {
   text-align: center;
 }
 
-.svg-wrapper {
-  height: 60px;
-  margin: 0 auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 320px;
-}
-
-.shape {
-  fill: transparent;
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 4px;
-  stroke: #19f6e8;
-}
-
 .text-top {
   color: #fff;
   font-family: 'Dancing Script', cursive;
   font-size: 48px;
   line-height: 53px;
   position: relative;
-  top: -280px;
+  top: 260px;
 }
 
 a {
@@ -84,6 +67,30 @@ a .text {
   text-decoration: none;
 }
 
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 320px;
+  fill: transparent;
+}
+
+.svg-wrapper:hover {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.svg-wrapper:hover .shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 4px;
+  stroke: #19f6e8;
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
 @keyframes draw {
   0% {
     stroke-dasharray: 140 540;
@@ -95,11 +102,6 @@ a .text {
     stroke-dashoffset: 0;
     stroke-width: 2px;
   }
-}
-
-.svg-wrapper:hover .shape {
-  -webkit-animation: 0.5s draw linear forwards;
-  animation: 0.5s draw linear forwards;
 }
 
 /*
