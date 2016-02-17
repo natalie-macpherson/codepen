@@ -18,7 +18,7 @@ html {
 }
 
 html, body {
-  background-color: #80339E;
+  background-color: $purple;
   height: 100%;
   overflow: hidden;
   text-align: center;
@@ -36,7 +36,7 @@ html, body {
 a {
     text-decoration: none;
   .text {
-    color: #fff;
+    color: $white;
     font-family: 'Roboto Condensed';
     font-size: 22px;
     letter-spacing: 8px;
@@ -48,7 +48,6 @@ a {
   }
 }
 
-
 .svg-wrapper {
   height: 60px;
   margin: 0 auto;
@@ -57,18 +56,18 @@ a {
   transform: translateY(-50%);
   width: 320px;
   fill: transparent;
-  &:hover {
+  &:hover .shape{
     -webkit-animation: 0.5s draw linear forwards;
     animation: 0.5s draw linear forwards;
-    .shape {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
-      stroke-width: 4px;
-      stroke: #19f6e8;
-      -webkit-animation: 0.5s draw linear forwards;
-      animation: 0.5s draw linear forwards;
-    }
   }
+}
+
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 4px;
+  stroke: #000;
+  fill: transparent;
 }
 
 

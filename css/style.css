@@ -77,18 +77,17 @@ a .text {
   fill: transparent;
 }
 
-.svg-wrapper:hover {
+.svg-wrapper:hover .shape {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
 }
 
-.svg-wrapper:hover .shape {
+.shape {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 4px;
-  stroke: #19f6e8;
-  -webkit-animation: 0.5s draw linear forwards;
-  animation: 0.5s draw linear forwards;
+  stroke: #000;
+  fill: transparent;
 }
 
 @keyframes draw {
